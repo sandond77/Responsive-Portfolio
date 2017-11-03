@@ -22,12 +22,12 @@ body {
 }
 
 #container2 {
-	position:absolute;
+	position:relative;
 	top:0;
 	padding:125px 100px 0px 100px;
 	margin-bottom: 25px;
 	width:960px;
-	height:100%;
+	height:600px;
 }
 
 h1 {
@@ -162,12 +162,12 @@ h3{
 }
 
 .textbox{
-	width: 605px;
+	width: 600px;
 	height:24px;
 }
 
 #textbox2{
-	width: 605px;
+	width: 600px;
 	height: 100px;
 	resize: vertical;
 	overflow: scroll;
@@ -223,11 +223,12 @@ h5{
 }
 
 .footer {
-	position:absolute;
-	bottom:-500px;
+/*	position:absolute;
+	bottom:-500px;*/
 	background:#666666;
 	color:#dddddd;
 	clear:both;
+	overflow:auto;
 	width:100%;
 	text-align:center;
 	padding:32px 0px 32px 0px;
@@ -235,7 +236,9 @@ h5{
 	margin-top:25px;
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	min-width:1200px;
+	height:100%;
 }
+
 
 @media screen and (max-device-width:980px) {
 	#top{
@@ -245,16 +248,35 @@ h5{
 	p{
 		width:100%;
 	}
+
 	.image-proj{
-		width:100%;
 		height:100%;
+		width:580px;
 	}
 
 	#profile{
 		width:100%;
 		float:none;
-
 	}
+
+	#mypic{
+		width:100%;
+		height:100%;
+	}
+
+	.textbox{
+		width:100%;
+		overflow:visible;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.formlabels{
+		font-size:3vw;
+	}	
 }
 
 @media screen and (max-device-width:768px) {
@@ -264,8 +286,13 @@ h5{
 		width:100%;
 		}
 
+	#container2{
+		height:100%;
+		min-width:600px;
+	}
+
 	.menu{
-		position:static;
+/*		position:static;*/
 		display:inline-block;
 		float:right;
 	}
@@ -273,71 +300,58 @@ h5{
 	#main{
 		position:static;
 		width:100%;
+		float:left;
 	}
 
 	#profile{
 		width:300px;
 		height:300px;
 		float:left;
-	}
 
+	}
 	.social{
-		position:relative;
-		left:0px;
-		top:650px;
-		margin-left:100px;
 		clear:both;
 		width:100%;
-	}
-
-	h3{
-		text-align:left;
-	}
-}
-
-@media screen and (max-device-width:768px) {
-	#top,
-	#container1,
-	#container2,
-	h1{
-		width:100%;
-		}
-
-	#top{
-		overflow:auto;
-	}
-
-	.menu{
 		position:static;
+		float:left;
+		margin:50px 0px 0px 100px;
+		padding: 40px 0px 40px 0px;
+	}
+
+	.connectbox{
+		position:relative
+	}
+
+	#iconmenu{
+		position:relative;
+		text-align:center;
+		margin:0px;
+	}
+
+	.image-proj{
 		display:inline-block;
-		margin:0 auto;
-		width:100%;
+		text-align: center;
+		width:430px;
+		height:35%;
 	}
 
-	#main{
-		position:static;
-		width:100%;
+	.textbox,
+	#textbox2{
+		width:90%;
 	}
 
-	#profile{
-		width:100%;
-		height:100%;
+	.textbox{
+		height:4vw;
 	}
 
-	.social{
-		position:relative;
-		left:0px;
-		top:1400px;
-		margin-left:100px;
-		clear:both;
-		width:100%;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	.formlabels{
+		font-size:3vw;
 	}
 
-	h3{
-		text-align:left;
-	}
 
-	.footer{
-		bottom:-1350px;
-	}
 }
