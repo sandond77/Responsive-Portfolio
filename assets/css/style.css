@@ -355,3 +355,57 @@ h5{
 
 
 }
+
+@media screen and (max-device-width:640px) {
+	#top,
+	#container1,
+	#container2{
+		width:100%;
+		}
+
+	#top{
+		height:160px;
+	}
+
+	#footer{
+	}
+
+	h1{
+		float:left;
+		width:100%;
+		position:absolute;
+		top:-80px;
+	}
+
+	#about,
+	#port,
+	#contact{
+		position:relative;
+		left:150px;
+		display:inline-block;
+		width:30%;
+		height:100%;
+		margin:0 auto;
+		font-size:3vw;
+	}
+
+	.menu{
+		width:100%;
+		min-width:640px;
+		position:relative;
+		left:0;
+	}
+
+	.image-proj{
+		height:100%;
+		width:100%;
+		margin:15px 0px 15px 0px;
+	}
+
+	.project{
+		width:100%;
+		margin:0;
+	}
+
+
+}
