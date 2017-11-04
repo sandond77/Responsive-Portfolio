@@ -407,5 +407,8 @@ h5{
 		margin:0;
 	}
 
-
+	.textbox,
+	#textbox2{
+		width:95%;
+	}
 }
